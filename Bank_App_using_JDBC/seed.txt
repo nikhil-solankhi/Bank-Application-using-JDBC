@@ -1,0 +1,15 @@
+alter user 'root'@'localhost' identified with mysql_native_password by 'password';
+create database bank;
+use bank;
+create table accounts(
+AccNO int,
+Name varchar(100),
+Address varchar(100),
+Balance Decimal(6,2));
+insert into accounts values(101,'Nikhil','Rajasthan',5845);
+insert into accounts values(102,'Tanmay','Dholpur',7937);
+insert into accounts values(103,'Deeksha','Jhansi',7547);
+insert into accounts values(104,'Mayank','Mumbai',5570);
+insert into accounts values(105,'Yash','Gujrat',6500);
+
+//add mysql connector in build path modules
